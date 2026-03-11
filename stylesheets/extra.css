@@ -1,0 +1,61 @@
+:root {
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+}
+
+/* Smooth transitions for links */
+a {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* Premium card-like feel for code blocks */
+.highlight {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid hsl(var(--border) / 0.1);
+}
+
+/* Subtle hover effect on list items in index */
+.md-content li {
+  padding: 0.25rem 0;
+  transition: transform 0.2s ease;
+}
+
+.md-content li:hover {
+  transform: translateX(4px);
+}
+
+/* Gradient text for main heading */
+h1 {
+  background: linear-gradient(to right, #000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* Add a bit of glassmorphism to the sidebar if possible */
+.md-sidebar {
+  /* This depends on theme structure, but let's try some common ones */
+}
+
+/* Custom scrollbar for a more premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
